@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Hora de Inicio -->
+    <EditText
+        android:id="@+id/editHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hora de inicio"
+        android:focusable="false" />
+
+    <!-- Hora de Fin -->
+    <EditText
+        android:id="@+id/editHoraFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hora de fin"
+        android:focusable="false" />
+
+    <!-- Comentarios -->
+    <EditText
+        android:id="@+id/editComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comentarios (opcional)" />
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardarSueno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+</LinearLayout>

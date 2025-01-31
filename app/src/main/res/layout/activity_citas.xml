@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Encabezado -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Citas Médicas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- Botón para Añadir Nueva Cita -->
+    <Button
+        android:id="@+id/btnAddCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir Nueva Cita"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para Filtrar por fecha -->
+    <Button
+        android:id="@+id/btnFilterByDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Fecha"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón para filtrar por prioridad -->
+    <Button
+        android:id="@+id/btnFilterByPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Prioridad"
+        android:layout_marginTop="8dp" />
+
+    <!-- Lista de Citas -->
+    <ListView
+        android:id="@+id/listCitas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/darker_gray" />
+</LinearLayout>

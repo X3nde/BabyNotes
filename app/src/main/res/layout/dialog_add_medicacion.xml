@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editNombreMedicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del medicamento" />
+
+    <EditText
+        android:id="@+id/editFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de inicio"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/editFechaFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de fin"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/editPosologia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Posología (cada X horas)" />
+
+    <EditText
+        android:id="@+id/editCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad por dosis" />
+
+    <EditText
+        android:id="@+id/editNotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notas adicionales (opcional)" />
+
+    <Button
+        android:id="@+id/btnGuardarMedicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+</LinearLayout>

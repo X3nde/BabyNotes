@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_citas"
+        android:title="Citas Médicas"
+        android:icon="@drawable/ic_citas"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_medicacion"
+        android:title="Medicación"
+        android:icon="@drawable/ic_medicacion"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_sueno"
+        android:title="Seguimiento del Sueño"
+        android:icon="@drawable/ic_sueno"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_deposiciones"
+        android:title="Deposiciones"
+        android:icon="@drawable/ic_deposiciones"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="Acerca de"
+        android:icon="@drawable/ic_acercade"
+        app:showAsAction="never" />
+</menu>

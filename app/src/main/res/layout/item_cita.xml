@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Título de la cita -->
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título de la cita"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Fecha y Hora -->
+    <TextView
+        android:id="@+id/textFechaHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha y hora"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+
+    <!-- Especialidad médica -->
+    <TextView
+        android:id="@+id/textEspecialidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidad"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+</LinearLayout>

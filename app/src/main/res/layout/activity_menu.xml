@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnCitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_citas"
+        android:text="Citas Médicas"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnMedicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_medicacion"
+        android:text="Medicación"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSueno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_sueno"
+        android:text="Seguimiento del Sueño"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnDeposiciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_deposiciones"
+        android:text="Deposiciones"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAcercaDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_acercade"
+        android:text="Acerca de" />
+</LinearLayout>
