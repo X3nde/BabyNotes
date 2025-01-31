@@ -1,6 +1,7 @@
 package com.xenderodriguezlopez.babynotes;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,9 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         // Configurar botones
+        Button btnSolicitar = findViewById(R.id.btnSolicitar);
+        btnSolicitar.setOnClickListener(v -> solicitar("https://www.comunidad.madrid/servicios/salud/cita-sanitaria#:~:text=Podrá%20citarse%20a%20través%20de,través%20del%20900%20102%20112."));
+
         Button btnCitas = findViewById(R.id.btnCitas);
         btnCitas.setOnClickListener(v -> startActivity(new Intent(MenuActivity.this, CitasActivity.class)));
 
@@ -36,6 +40,12 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    private void solicitar(String url) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
     private void showAboutDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acerca de");

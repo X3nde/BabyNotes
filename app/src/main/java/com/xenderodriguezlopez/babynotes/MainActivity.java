@@ -1,6 +1,7 @@
 package com.xenderodriguezlopez.babynotes;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
         // Manejar clics en los ítems del menú
         int id = item.getItemId();
 
-        if (id == R.id.action_citas) {
+        if (id == R.id.action_solicitar) {
+            solicitar("https://www.comunidad.madrid/servicios/salud/cita-sanitaria#:~:text=Podrá%20citarse%20a%20través%20de,través%20del%20900%20102%20112.");
+            return true;
+        }else if (id == R.id.action_citas) {
             startActivity(new Intent(this, CitasActivity.class));
             return true;
         } else if (id == R.id.action_medicacion) {
@@ -58,12 +62,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    private void solicitar(String url) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
 
     // Mostrar el diálogo "Acerca de"
     private void showAboutDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acerca de");
-        builder.setMessage("BabyNotes\nVersión 1.0\nDesarrollado por Xende Rodríguez López.");
+        builder.setMessage("BabyNotes\nVersión 2.0\nDesarrollado por Xende Rodríguez López.");
         builder.setPositiveButton("Cerrar", null);
         builder.create().show();
     }

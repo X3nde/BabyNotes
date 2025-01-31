@@ -2,6 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_solicitar"
+        android:title="Solicitar citas"
+        android:icon="@drawable/ic_hospital"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/action_citas"
         android:title="Citas Médicas"
         android:icon="@drawable/ic_citas"
