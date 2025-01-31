@@ -30,4 +30,10 @@
         android:title="Acerca de"
         android:icon="@drawable/ic_acercade"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Preferencias"
+        android:icon="@drawable/ic_preferencias"
+        app:showAsAction="always" />
 </menu>

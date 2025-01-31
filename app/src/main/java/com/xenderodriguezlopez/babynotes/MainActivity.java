@@ -48,7 +48,12 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.action_about) {
             showAboutDialog();
             return true;
+        } else if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 

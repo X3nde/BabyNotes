@@ -30,6 +30,10 @@ public class MenuActivity extends AppCompatActivity {
 
         Button btnAcercaDe = findViewById(R.id.btnAcercaDe);
         btnAcercaDe.setOnClickListener(v -> showAboutDialog());
+
+        Button btnPreferencias = findViewById(R.id.btnPreferencias);
+        btnPreferencias.setOnClickListener(v -> startActivity(new Intent(MenuActivity.this, SettingsActivity.class)));
+
     }
 
     private void showAboutDialog() {

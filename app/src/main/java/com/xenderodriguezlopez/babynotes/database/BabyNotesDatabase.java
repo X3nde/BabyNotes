@@ -9,8 +9,9 @@ import com.xenderodriguezlopez.babynotes.models.Cita;
 import com.xenderodriguezlopez.babynotes.models.Medicamento;
 import com.xenderodriguezlopez.babynotes.models.Sueno;
 import com.xenderodriguezlopez.babynotes.models.Deposicion;
+import com.xenderodriguezlopez.babynotes.models.Aceleration;
 
-@Database(entities = {Cita.class, Medicamento.class, Sueno.class, Deposicion.class}, version = 3, exportSchema = false)
+@Database(entities = {Cita.class, Medicamento.class, Sueno.class, Deposicion.class, Aceleration.class}, version = 4, exportSchema = false)
 public abstract class BabyNotesDatabase extends RoomDatabase {
 
     private static BabyNotesDatabase instance;
@@ -19,6 +20,7 @@ public abstract class BabyNotesDatabase extends RoomDatabase {
     public abstract MedicamentoDao medicamentoDao();
     public abstract SuenoDao suenoDao();
     public abstract DeposicionDao deposicionDao();
+    public abstract AcelerationDao acelerationDao();
 
     public static synchronized BabyNotesDatabase getInstance(Context context) {
         if (instance == null) {

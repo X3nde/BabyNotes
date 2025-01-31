@@ -43,5 +43,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_acercade"
-        android:text="Acerca de" />
+        android:text="Acerca de"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnPreferencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_preferencias"
+        android:text="Preferencias" />
 </LinearLayout>

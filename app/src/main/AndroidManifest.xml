@@ -38,5 +38,12 @@
         <!-- Control de Deposiciones -->
         <activity android:name=".DeposicionesActivity" />
 
+        <!-- Acelerómetro -->
+        <activity android:name=".AccelerationActivity" />
+
+        <!-- Preferencias -->
+        <activity android:name=".SettingsActivity" />
+
+
     </application>
 </manifest>
