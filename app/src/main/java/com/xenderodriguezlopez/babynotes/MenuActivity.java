@@ -38,6 +38,9 @@ public class MenuActivity extends AppCompatActivity {
         Button btnPreferencias = findViewById(R.id.btnPreferencias);
         btnPreferencias.setOnClickListener(v -> startActivity(new Intent(MenuActivity.this, SettingsActivity.class)));
 
+        Button btnAcelerometro = findViewById(R.id.btnAcelerometro);
+        btnAcelerometro.setOnClickListener(v -> startActivity(new Intent(MenuActivity.this, AccelerationActivity.class)));
+
     }
 
     private void solicitar(String url) {

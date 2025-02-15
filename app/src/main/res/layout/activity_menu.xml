@@ -60,4 +60,13 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_preferencias"
         android:text="Preferencias" />
+
+    <Button
+        android:id="@+id/btnAcelerometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Acelerómetro"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
 </LinearLayout>
